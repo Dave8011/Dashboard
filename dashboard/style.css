@@ -1,0 +1,89 @@
+/* Basic Reset */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+/* Container Styling */
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* Section Titles */
+
+h1,
+h2 {
+    margin-top: 20px;
+    color: #1a202c;
+}
+
+
+/* Upload and Filter Layout */
+
+.upload-section,
+.filter-section {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+
+/* Form Controls */
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="file"],
+input[type="date"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+/* Table Styling */
+
+.table-section {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    text-align: left;
+}
+
+thead {
+    background: #2d3748;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
