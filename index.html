@@ -1,18 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TAcos Dashboard</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #333; }
+    .filters { margin-bottom: 20px; }
+    label { margin-right: 10px; }
     table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; font-size: 14px; }
     th { background-color: #f2f2f2; }
   </style>
 </head>
 <body>
+
   <h1>TAcos Dashboard</h1>
-  <table>
+
+  <div class="filters">
+    <label>From: <input type="date" id="fromDate"></label>
+    <label>To: <input type="date" id="toDate"></label>
+    <label>Brand: <input type="text" id="brandFilter" placeholder="e.g. Pure Tree"></label>
+    <label>SKU: <input type="text" id="skuFilter" placeholder="e.g. SKU123"></label>
+    <label>ASIN: <input type="text" id="asinFilter" placeholder="e.g. B000123"></label>
+    <label>Title: <input type="text" id="titleFilter" placeholder="e.g. Omega 3"></label>
+    <button onclick="applyFilters()">Apply Filters</button>
+  </div>
+
+  <table id="dashboardTable">
     <thead>
       <tr id="dashboardHeader"></tr>
     </thead>
